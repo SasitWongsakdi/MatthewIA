@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library</title>
+    <style>
+        /* h1  {
+            margin-top: 0;
+            padding-top: 0;
+        } */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            background-color: green;
+        }
+
+        /* Clear floats after the columns */
+        .row {
+            content: "";
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 id="pageTitle" style="color:blue; font-weight: bold;">Library</h1>
+    <div style="background-color: lightblue;">
+        <h1>New Book</h1>
+        <h1 style="margin-bottom: 0px;">Search Book</h1>
+
+    </div>
+
+    <div style="background-color: YELLOW; height: 150px">
+        <h1 style="margin-top:0px;padding-top:50px">Added Books </h1>
+
+    </div>
+
+    <div style=" height: 200px">
+        <!-- <h1 style="margin-top:0px;padding-top:50px">Added Books </h1> -->
+        <div style="width: 20%; float:left; background-color: blue; height: 100%;">
+                <p style = "text-align: center;"> Author </p>
+                <img src="book cover 2.jpg" alt="Girl in a jacket" width="100" height="100" style = "margin-left: 45px;">
+
+        </div>
+
+        <div style="width:20%; float:left; background-color: pink; height: 100%">
+            Page Number
+        </div>
+        <div style="width: 20%; float:left; background-color: tan; height: 100%">
+            title
+        </div>
+        <div style="width: 20%; float:left; background-color: tan; height: 100%">
+            Picture
+        </div>
+        <div style="width: 20%; float:left; background-color: tan; height: 100%">
+            Description
+        </div>
+    </div>
+
+    <div style="height: 300px; background-color: beige;">
+
+    </div>
+    <!-- <div class="row">
+        <div class="column" >
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+        </div>
+    </div> -->
+    <script>
+        var pageTitle = document.getElementById("pageTitle");
+
+        console.log('hello world')
+        console.log(pageTitle)
+
+        pageTitle.onmousemove = () => {
+            pageTitle.style.color = 'red'
+        }
+
+        pageTitle.onmouseleave = () => {
+            pageTitle.style.color = 'blue'
+        }
+    </script>
+</body>
+
+</html>
